@@ -1,3 +1,8 @@
+:root {
+  --colorOfHeading: darkslateblue;
+  --colorOfBackground: aquamarine;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,14 +27,20 @@ p {
   margin: 0;
 }
 header {
+  display: flex;
   padding: 10px 0;
-  background: chartreuse;
+  background: var(--colorOfHeading);
+  justify-content: space-between;
+}
+header nav {
+  gap: 5px;
+  display: flex;
 }
 header h1{
  display: inline-block;
- background-color: aqua;
- padding: 3px 3px 3px 5vw;
- line-height: 2em;
+ background-color: var(--colorOfBackground);
+ padding: 1px 10px 1px 5vw;
+ line-height: 32px;
 }
 /* Added hero banner and style contect within in */
 .hero-banner {
@@ -37,16 +48,16 @@ header h1{
  background-repeat: no-repeat;
  background-size: cover;
  background-size: 100%;
- height: 300px;
+ min-height: 300px;
  display: flex;
  align-items: flex-end;
  justify-content: flex-end;
 }
 
 .hero-banner h2 {
-  background-color: aqua;
-  margin: 5px 20px 20px 5px;
-  padding: 3px;
+  background-color: var(--colorOfBackground);
+  padding: 5px 3px;
+  margin: 0 30px 10px 0;
 }
 
 
@@ -56,15 +67,96 @@ header h1{
   gap: 20px;
   padding: 5vw;
 }
-.page-section {
-
+.page-wrapper .page-section {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.page section #about {
 
+.page-wrapper .page-section .heading {
+  min-width: 10em;
+  display: inline-block;
+  color: var(--colorOfHeading);
+  text-align: right;
+  padding-right: 16px;
 }
-.page-section #work {
 
+.page-wrapper .page-section .content {
+  flex: 1;
 }
-.page-section-contact {
 
+.page-wrapper .page-section .content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 5px solid aquamarine;
+}
+
+.page-wrapper .page-section .content .gallery {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-wrapper .page-section .content .frame {
+  position: relative;
+  width: calc(50% - 30px)
+}
+
+.page-wrapper .page-section .content .frame.image-full {
+  margin-bottom: 10px;
+}
+
+.page-wrapper .page-section .content .caption {
+  left: 0;
+  bottom: 30%;
+  font-size: 1rem;
+  text-align: left;
+  position: absolute;
+  color: darkslateblue;
+  padding: 10px 10px 10px 10px;
+  background: var(--colorOfBackground);
+}
+
+.page-wrapper .page-section .content .caption span {
+  font-size: 1.5rem;
+  display: block;
+  font-weight: bolder;
+}
+.page-wrapper .page-section-contact .heading {
+  min-width: 10em;
+  display: inline-block;
+  color: var(--colorOfHeading);
+  text-align: right;
+  padding-right: 16px;
+}
+.page-wrapper .page-section-contact .content {
+  flex: 1;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+  .page-wrapper .page-section .heading {
+    width: 100%;
+    text-align: left;
+    border-bottom: 4px solid var(--colorOfHeading);
+  }
+  .page-wrapper .page-section .content .frame {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .page-wrapper .page-section .heading {
+    border-right: 5px solid var(--colorOfHeading);
+  }
 }
