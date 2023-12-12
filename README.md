@@ -13,8 +13,10 @@ cd Code-Refactor-Challenge
 ## Usage
 
 Portfolio is responsible in 3 types of screens: mobile phone, tablet and monitor. Below you will find sreenshots of view all of them. 
-Provide instructions and examples for use. Include screenshots as needed.
 
+![screenbig](images/screen1.png)
+![screenmedium](images/screen2.png)
+![screensmall](images/screen3.png)
 
 ## Credits
 
