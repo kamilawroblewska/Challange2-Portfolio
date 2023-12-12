@@ -33,7 +33,7 @@ If you hover on project gallery image, the pictute will be darker.
 
 ## Tests
 
-link here
+https://kamilawroblewska.github.io/Challange2-Portfolio/
 ---
 
 Thank you for visiting my portfolio. Feel free to reach out if you have any questions or if you're interested in collaborating on a project.
