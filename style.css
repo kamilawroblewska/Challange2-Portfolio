@@ -38,8 +38,9 @@ header {
 }
 
 header nav {
-  gap: 5px;
+  gap: 10px;
   display: flex;
+  margin-right: 5vw;
 }
 
 header a {
@@ -158,6 +159,9 @@ div img:hover {
 
 .page-section-contact .content {
   text-align: center;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 /* Added page response in diffrent resolution */
@@ -204,6 +208,18 @@ div img:hover {
     text-align: center;
     border-bottom: 2px solid;
   }
+
+  header nav {
+    gap: 20px;
+    display: flex;
+  }
+
+  .page-section-contact .content {
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 468px) and (max-width: 768px) {
@@ -247,6 +263,11 @@ div img:hover {
     width: 100%;
     text-align: center;
     border-bottom: 2px solid;
+  }
+
+  header nav {
+    gap: 50px;
+
   }
 }
 
