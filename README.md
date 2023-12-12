@@ -5,7 +5,7 @@ Welcome to my portfolio! I'm Kamila, a passionate Junior Front -end Developer wi
 ## Installation
 
 Clone the Repository:
-git clone https://github.com/kamilawroblewska/Code-Refactor-Challenge.git
+git clone git@github.com:kamilawroblewska/Challange2-Portfolio.git
 
 Embark on the Adventure:
 cd Code-Refactor-Challenge
