@@ -27,6 +27,7 @@ h6 {
 p {
   margin: 0;
 }
+
 /* Added header styling */
 
 header {
@@ -35,38 +36,43 @@ header {
   background: var(--colorOfHeading);
   justify-content: space-between;
 }
+
 header nav {
   gap: 5px;
   display: flex;
 }
+
 header a {
   text-decoration: none;
   color: var(--colorOfBackground);
   border-bottom: 2px solid;
   margin: 3px;
 }
-header h1{
+
+header h1 {
   display: inline-block;
   background-color: var(--colorOfBackground);
   padding: 1px 10px 1px 5vw;
   line-height: 32px;
 }
+
 /* Added hero banner and style within in */
 .hero-banner {
   background-image: url(images/02-hero-bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-size: 100%;
   min-height: 300px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
+
 .hero-banner h2 {
   background-color: var(--colorOfBackground);
   padding: 5px 3px;
   margin: 0 30px 10px 0;
 }
+
 /* Added flex for website main content */
 .page-wrapper {
   display: flex;
@@ -74,11 +80,13 @@ header h1{
   gap: 20px;
   padding: 5vw;
 }
+
 .page-wrapper .page-section {
   gap: 15px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .page-wrapper .page-section .heading {
   min-width: 10em;
   display: inline-block;
@@ -86,27 +94,33 @@ header h1{
   text-align: right;
   padding-right: 16px;
 }
+
 .page-wrapper .page-section .content {
   flex: 1;
 }
+
 .page-wrapper .page-section .content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 5px solid var(--colorOfBackground);
 }
+
 .page-wrapper .page-section .content .gallery {
   gap: 10px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .page-wrapper .page-section .content .frame {
   position: relative;
   width: calc(50% - 30px)
 }
+
 .page-wrapper .page-section .content .frame.image-full {
   margin-bottom: 10px;
 }
+
 .page-wrapper .page-section .content .caption {
   left: 0;
   bottom: 30%;
@@ -117,14 +131,17 @@ header h1{
   padding: 10px 10px 10px 10px;
   background: var(--colorOfBackground);
 }
+
 .page-wrapper .page-section .content .caption span {
   font-size: 1.5rem;
   display: block;
   font-weight: bolder;
 }
+
 div img:hover {
   filter: brightness(50%);
 }
+
 .page-section-contact .heading {
   min-width: 10em;
   display: inline-block;
@@ -132,98 +149,124 @@ div img:hover {
   text-align: right;
   padding-right: 16px;
 }
- .page-section-contact .content a {
+
+.page-section-contact .content a {
   text-decoration: none;
   border-bottom: 2px solid var(--colorOfBackground);
   color: var(--colorOfBackground);
 }
+
 .page-section-contact .content {
   text-align: center;
 }
+
 /* Added page response in diffrent resolution */
-@media screen and (min-width: 320px) and (max-width: 467px) {  /*small screen*/
+@media screen and (min-width: 320px) and (max-width: 467px) {
+
+  /*small screen*/
   html {
     font-size: 12px;
   }
+
   .page-wrapper .page-section .heading {
     width: 100%;
     text-align: left;
     border-bottom: 4px solid var(--colorOfHeading);
   }
+
   .page-section-contact .heading {
     width: 100%;
     text-align: left;
     border-bottom: 4px solid var(--colorOfHeading);
   }
+
   .page-wrapper .page-section .content .frame {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
+
   header {
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
   }
+
   header h1 {
     width: 100%;
     line-height: 32px;
     text-align: center;
   }
+
   header nav a {
     width: 100%;
     text-align: center;
     border-bottom: 2px solid;
   }
 }
-@media screen and (min-width: 468px) and (max-width: 768px){  /*medium screen*/
+
+@media screen and (min-width: 468px) and (max-width: 768px) {
+
+  /*medium screen*/
   html {
     font-size: 14px;
   }
+
   .page-wrapper .page-section .content .frame.image-full {
     margin-bottom: 10px;
     width: 93%;
   }
+
   .page-wrapper .page-section .heading {
     width: 100%;
     text-align: left;
     border-bottom: 4px solid var(--colorOfHeading);
   }
+
   .page-section-contact .heading {
     width: 100%;
     text-align: left;
     border-bottom: 4px solid var(--colorOfHeading);
   }
+
   header {
     display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
   }
+
   header h1 {
     width: 100%;
     line-height: 32px;
     text-align: center;
   }
+
   header nav a {
     width: 100%;
     text-align: center;
     border-bottom: 2px solid;
   }
 }
-@media screen and (min-width:769px) {  /*big screen*/
+
+@media screen and (min-width:769px) {
+
+  /*big screen*/
   html {
     font-size: 16px;
   }
+
   .page-wrapper .page-section .heading {
     text-align: left;
     border-right: 5px solid var(--colorOfHeading);
   }
+
   .page-section-contact .heading {
     text-align: left;
     border-right: 5px solid var(--colorOfHeading);
   }
+
   .page-wrapper .page-section .content .frame.image-full {
     margin-bottom: 10px;
     width: 94%;
